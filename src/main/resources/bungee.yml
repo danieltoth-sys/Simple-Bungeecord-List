@@ -1,0 +1,4 @@
+name: BetterGList
+version: '${project.version}'
+main: in.betterglist
+description: A better Bungeecord list plugin
