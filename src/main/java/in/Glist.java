@@ -15,7 +15,8 @@ import java.util.Objects;
 
 public class Glist extends Command {
     public Glist() {
-        super("glist");
+        super("glist", "in.glist", "list");
+
     }
 
     @Override
