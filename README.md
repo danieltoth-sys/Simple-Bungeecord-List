@@ -1,8 +1,9 @@
-# Simple-Bungeecord-List
+# Simple Bungeecord List
 
 This project is nothing, but a simple bungeecord /glist command rewritten just to look a little better.
 
 You can use this plugin if you want for your server, but do not expect regular updates. This is just a /glist command.
+You can even fork it if you want to further customize this plugin.
 
 Requires:
 - 1.8 Java version for your server
