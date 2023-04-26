@@ -22,7 +22,6 @@ public class Glist extends Command {
     @Override
     public void execute(CommandSender sender, String[] args)
     {
-        sender.sendMessage(ChatColor.RED + "Játékosok a szervereken:");
         for ( ServerInfo server : ProxyServer.getInstance().getServers().values() )
         {
             if ( !server.canAccess( sender ) )
@@ -37,9 +36,7 @@ public class Glist extends Command {
             }
             Collections.sort( players, String.CASE_INSENSITIVE_ORDER );
 
-            if (!Objects.equals(server.getName(), "rush")){
-                sender.sendMessage(ChatColor.GOLD + server.getName().substring(0, 1).toUpperCase() + server.getName().substring(1) + ChatColor.DARK_GRAY +" (" + ChatColor.GREEN + server.getPlayers().size() + ChatColor.DARK_GRAY + ") "+ ChatColor.GRAY+ "» " + Util.format( players, ChatColor.GRAY + ", " ) );
-            }
+            sender.sendMessage(ChatColor.GOLD + server.getName().substring(0, 1).toUpperCase() + server.getName().substring(1) + ChatColor.DARK_GRAY +" (" + ChatColor.GREEN + server.getPlayers().size() + ChatColor.DARK_GRAY + ") "+ ChatColor.GRAY+ "» " + Util.format( players, ChatColor.GRAY + ", " ) );
         }
 
         sender.sendMessage(ChatColor.GRAY + ProxyServer.getInstance().getTranslation( "total_players", ProxyServer.getInstance().getOnlineCount() ) );
