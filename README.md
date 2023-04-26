@@ -12,4 +12,4 @@ You can download the .jar file in the Release section.
 
 
 Permissions:
-in.glist - The /glist command
+- in.glist - The /glist command
