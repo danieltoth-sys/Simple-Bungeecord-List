@@ -9,3 +9,7 @@ Requires:
 - Any version of BungeeCord (I don't know if it runs on any bungeecord fork, for example Velocity, or FlameCord)
 
 You can download the .jar file in the Release section.
+
+
+Permissions:
+in.glist - The /glist command
